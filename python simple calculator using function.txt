@@ -1,0 +1,40 @@
+#python simple calculator using function:
+def add():
+	x=float(input("Enter 1st number:"))
+	y=float(input("Enter 2nd number:"))
+	print("Sum=",x+y)
+def sab():
+	x=float(input("Enter 1st number:"))
+	y=float(input("Enter 2nd number:"))
+	print("Sabstraction=",x-y)
+def mul():
+	x=float(input("Enter 1st number:"))
+	y=float(input("Enter 2nd number"))
+	print("Multiplication=",x*y)
+def div():
+	x=float(input("Enter 1st number:"))
+	y=float(input("Enter 2nd number:"))
+	print("Division=",x/y)
+
+def work():
+	w=int(input("Press 5:"))
+	if w==5:
+		manu()
+def menu():
+	print("1.Addition")
+	print("2.Sabstraction")
+	print("3.Multiplication")
+	print("4.Division")
+	n=int(input("Enter a option:"))
+	if n==1:
+		add()
+	elif n==2:
+	  	sab()
+	elif n==3:
+  		mul()
+	elif n==4:
+	  	div()
+	else:
+		print("You entered wron input!Try again!")
+		menu()
+menu()
